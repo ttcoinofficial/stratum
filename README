@@ -48,7 +48,7 @@ sudo python setup.py install
 The process is full of errors and a lot of them are not very obvious. Top tip, enable the stratum.log while setting up stratum-mining, it will help.
 https://github.com/slush0/stratum-mining/blob/master/conf/config_sample.py#L15
 
-git clone https://github.com/Tydus/litecoin_scrypt.git
+git clone https://github.com/ttcoinofficial/litecoin_scrypt.git
 git clone https://github.com/ttcoinofficial/stratum-mining.git
 git clone https://github.com/ttcoinofficial/stratum.git
 
