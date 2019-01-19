@@ -19,6 +19,18 @@ linux-based system (should work on Mac OS too, not tested)
 
 Following instructions will work on Ubuntu & Debian*:
 
+a) From GIT, for developers
+git clone git://github.com/slush0/stratum.git 
+sudo apt-get install python-dev
+sudo python setup.py develop
+
+b) From package, permanent install for production use
+sudo apt-get install python-dev
+sudo apt-get install python-setuptools
+sudo easy_install stratum
+
+*) Debian don't have a 'sudo' command, please do the installation
+process as a root user.
 
 Remove the distribute_setup.py and edit setup.py to remove these lines.
 
@@ -36,20 +48,20 @@ sudo python setup.py install
 The process is full of errors and a lot of them are not very obvious. Top tip, enable the stratum.log while setting up stratum-mining, it will help.
 https://github.com/slush0/stratum-mining/blob/master/conf/config_sample.py#L15
 
+git clone https://github.com/Tydus/litecoin_scrypt.git
+git clone https://github.com/Crypto-Expert/stratum-mining.git
+git clone https://github.com/ahmedbodi/stratum.git
 
+cd ~/stratum-mining
+git submodule init
+git submodule update
 
-a) From GIT, for developers
-git clone git://github.com/slush0/stratum.git 
-sudo apt-get install python-dev
-sudo python setup.py develop
+cd ~/litecoin_scrypt
+sudo python setup.py install
 
-b) From package, permanent install for production use
-sudo apt-get install python-dev
-sudo apt-get install python-setuptools
-sudo easy_install stratum
+cd ~/stratum
+sudo python setup.py install
 
-*) Debian don't have a 'sudo' command, please do the installation
-process as a root user.
 
 Configuration
 =============
