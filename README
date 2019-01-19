@@ -50,7 +50,7 @@ https://github.com/slush0/stratum-mining/blob/master/conf/config_sample.py#L15
 
 git clone https://github.com/Tydus/litecoin_scrypt.git
 git clone https://github.com/Crypto-Expert/stratum-mining.git
-git clone https://github.com/ahmedbodi/stratum.git
+git clone https://github.com/ttcoinofficial/stratum.git
 
 cd ~/stratum-mining
 git submodule init
