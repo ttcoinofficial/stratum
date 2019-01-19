@@ -19,6 +19,25 @@ linux-based system (should work on Mac OS too, not tested)
 
 Following instructions will work on Ubuntu & Debian*:
 
+
+Remove the distribute_setup.py and edit setup.py to remove these lines.
+
+From
+-from distribute_setup import use_setuptools
+-use_setuptools()
+-py_modules=['distribute_setup',],
+
+Then run this to make sure that distribute is up-to-date.
+pip install --upgrade distribute
+
+Then try installing again with.
+sudo python setup.py install
+
+The process is full of errors and a lot of them are not very obvious. Top tip, enable the stratum.log while setting up stratum-mining, it will help.
+https://github.com/slush0/stratum-mining/blob/master/conf/config_sample.py#L15
+
+
+
 a) From GIT, for developers
 git clone git://github.com/slush0/stratum.git 
 sudo apt-get install python-dev
